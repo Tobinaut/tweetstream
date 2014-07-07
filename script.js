@@ -6,8 +6,9 @@ var tweetArray = [
 ];
 $(document).ready(function() {
 	for(var i in tweetArray) {
-		var el = $('<div>');
-		el.text(tweetArray[i].text);
-		$('.test').append(el);	
+		var s = '<div><h2>' + tweetArray[i].author + ': '+ '</h2><p>"' + tweetArray[i].text + '"<p></div>'; 
+		//var el = $('<div>');
+		//el.text(tweetArray[i].text);
+		$('.test').append(s);	
 	}
 });
