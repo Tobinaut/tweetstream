@@ -7,16 +7,17 @@
 		<script type='text/javascript' src='vendor/jquery-2.1.1.min.js'></script>
 		<script type='text/javascript' src='vendor/moment.js'></script>
 		<script type='text/javascript' src='vendor/underscore-min.js'></script>
-
+		<link rel="stylesheet" type="text/css" href="stylesheets.css">
 		<script type='text/javascript' src='tweet-data.js'></script>
 		<script type='text/javascript' src='script.js'></script>
 	</head>
 	<body>
 		<script id="tweet-template" type="text/x-handlebars-template">
-			<div>
+			<div class="tweet-css">
 				<h2>{{user.name}}:</h2>
 				<p>"{{text}}"</p>
-				{{time created_at}}
+				<div class="time">{{time created_at}}</div>
+				<button class="del-button">Удалить</button>
 			</div>
 		</script>
 		<script id="statistic-template" type="text/x-handlebars-template">
