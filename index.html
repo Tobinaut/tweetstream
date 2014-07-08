@@ -6,19 +6,25 @@
 		<script type="text/javascript" src="vendor/handlebars-v1.3.0.js"></script>
 		<script type='text/javascript' src='vendor/jquery-2.1.1.min.js'></script>
 		<script type='text/javascript' src='vendor/moment.js'></script>
+		<script type='text/javascript' src='vendor/underscore-min.js'></script>
 
 		<script type='text/javascript' src='tweet-data.js'></script>
 		<script type='text/javascript' src='script.js'></script>
 	</head>
 	<body>
-		<script id="template" type="text/x-handlebars-template">
+		<script id="tweet-template" type="text/x-handlebars-template">
 			<div>
 				<h2>{{user.name}}:</h2>
 				<p>"{{text}}"</p>
 				{{time created_at}}
 			</div>
 		</script>
+		<script id="statistic-template" type="text/x-handlebars-template">
+			<h2>Статистика</h2>
+			<p>Найдено твитов содержащих '{{search}}': <b>{{count}}</b>.</p>
+		</script>
 		Hello, world
-		<div class="test"></div>
+		<div class="statistic"></div>
+		<div class="tweet"></div>
 	</body>
 </html>
