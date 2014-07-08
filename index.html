@@ -16,20 +16,25 @@
 	<body>
 		<script id="tweet-template" type="text/x-handlebars-template">
 			<div class="tweet-css col-md-4">
-				<h2>{{user.name}}:</h2>
+				<h2>{{user.name}}</h2>
+				<p><h3 class="scr_name">@{{user.screen_name}}</h3></p>
 				<p>"{{text}}"</p>
 				<div class="time">{{time created_at}}</div>
-				<button class="del-button">Удалить</button>
+				<button class="del-button btn btn-warning">Удалить</button>
 			</div>
 		</script>
 		<script id="statistic-template" type="text/x-handlebars-template">
-			<h2>Статистика</h2>
-			<p>Найдено твитов содержащих '{{search}}': <b>{{count}}</b>.</p>
+			<div>
+				<h2>Статистика</h2>
+				<p>Найдено твитов содержащих '{{search}}': <b>{{count}}</b>.</p>
+			</div>
 		</script>
 		Hello, world
 		<div class="container">
-			<div id="map" class="row marketing" style="width: 600px; height: 400px"></div>
-			<div class="statistic row"></div>
+			<div class="row marking">
+				<div id="map" class="col-md-8" style="width: 600px; height: 400px"></div>
+				<div class="statistic col-md-4"></div>
+			</div>
 			<div class="tweet row"></div>
 		<div>
 	</body>

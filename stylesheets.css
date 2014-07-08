@@ -1,8 +1,13 @@
 .tweet-css {
-	padding: 20px;	 
+	padding: 20px;
+	height: 300px;
 }
 .time {
 color: CCCC99;
 font-style: italic;
 padding-bottom: 10px;
 }
+.scr_name {
+	color: 3399CC;
+}
+

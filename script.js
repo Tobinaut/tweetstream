@@ -37,9 +37,6 @@ $(document).ready(function() {
 	$('.del-button').on('click', function () {
 		$(this).closest('.tweet-css').remove();
 	});
-	ymaps.ready(init);
-	
-		
-    
+	ymaps.ready(init);   
 });
 
